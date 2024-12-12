@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "ChadSchema",
+    "title": "Chad Schema",
+    "type": "object",
+    "description": "Generate a ready to use entity based feature angular standalone components ecosystem",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of the person you want to greet",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
