@@ -7,7 +7,7 @@
     "properties": {
         "name": {
             "type": "string",
-            "description": "Name of the person you want to greet",
+            "description": "The entity name",
             "$default": {
                 "$source": "argv",
                 "index": 0

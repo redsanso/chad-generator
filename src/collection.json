@@ -2,9 +2,14 @@
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "chad": {
-      "description": "A blank schematic.",
+      "description": "An example schematics.",
       "factory": "./chad/index#chad",
       "schema": "./chad/schema.json"
+    },
+    "api-service": {
+      "description": "An api service schematics.",
+      "factory": "./api-service/index#apiService",
+      "schema": "./api-service/schema.json"
     }
   }
 }
