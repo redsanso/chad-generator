@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "HttpResource",
+    "title": "Http Resource",
+    "type": "object",
+    "description": "Service class to perform http operations",
+    "properties": {
+        "name" : {
+            "type" : "string",
+            "description" : "Name for your Angular http service",
+            "x-prompt": "What is the class name for your service?"
+        },
+        "url" : {
+            "type" : "string",
+            "description" : "Base url for API service without domain",
+            "x-prompt": "What is the full url to the API service?"
+        }
+    },
+    "required": [
+        "name", "url"
+    ]
+}

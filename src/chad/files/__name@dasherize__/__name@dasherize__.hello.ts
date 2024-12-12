@@ -1,3 +1,3 @@
-export class <%= dasherize(name) %> {
+export class <%= classify(name) %> {
 
 }
