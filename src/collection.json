@@ -3,7 +3,8 @@
   "schematics": {
     "chad": {
       "description": "A blank schematic.",
-      "factory": "./chad/index#chad"
+      "factory": "./chad/index#chad",
+      "schema": "./chad/schema.json"
     }
   }
 }
