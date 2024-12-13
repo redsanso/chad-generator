@@ -15,7 +15,6 @@ export function chad(_options: Schema): Rule {
       })
     ]);
 
-    tree = mergeWith(parameterizedTemplate)(tree, _context) as Tree;
-    return tree;
+    return mergeWith(parameterizedTemplate)(tree, _context);
   };
 }

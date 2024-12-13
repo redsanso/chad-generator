@@ -8,7 +8,11 @@
         "name" : {
             "type" : "string",
             "description" : "Name for your Angular http service",
-            "x-prompt": "What is the class name for your service?"
+            "x-prompt": "What is the class name for your service?",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
         },
         "url" : {
             "type" : "string",
