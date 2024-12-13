@@ -1,20 +1,22 @@
 {
     "$schema": "http://json-schema.org/schema",
-    "$id": "ChadSchema",
-    "title": "Chad Schema",
+    "$id": "HttpResource",
+    "title": "Http Resource",
     "type": "object",
-    "description": "Generate a ready to use entity based feature angular standalone components ecosystem",
+    "description": "Service class to perform http operations",
     "properties": {
-        "name": {
-            "type": "string",
-            "description": "The entity name",
-            "$default": {
-                "$source": "argv",
-                "index": 0
-            }
+        "name" : {
+            "type" : "string",
+            "description" : "Name for your Angular http service",
+            "x-prompt": "What is the class name for your service?"
+        },
+        "url" : {
+            "type" : "string",
+            "description" : "Base url for API service without domain",
+            "x-prompt": "What is the full url to the API service?"
         }
     },
     "required": [
-        "name"
+        "name", "url"
     ]
 }
