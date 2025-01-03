@@ -5,21 +5,21 @@ import { <%= classify(name) %> } from '../<%= dasherize(name) %>';
 import { <%= classify(name) %>ApiService } from '../<%= dasherize(name) %>.service';
 
 @Component({
-    selector: "search-<%= dasherize(name) %>",
+    selector: "view-<%= dasherize(name) %>",
     standalone: true,
     imports: [CommonModule],
-	templateUrl: "./search-<%= dasherize(name) %>.component.html",
-	styleUrl: "./search-<%= dasherize(name) %>.component.css",
+	templateUrl: "./view-<%= dasherize(name) %>.component.html",
+	styleUrl: "./view-<%= dasherize(name) %>.component.css",
 })
-export class Search<%= classify(name) %>Component implements OnInit {
+export class View<%= classify(name) %>Component implements OnInit {
 
-    dataList$?: Observable<<%= classify(name) %>[]>;
+    data$?: Observable<<%= classify(name) %>>;
 
     constructor(
         private readonly service: <%= classify(name)%>ApiService
     ){}
 
     ngOnInit() {
-        this.dataList$ = this.service.findAll();
+        this.data$ = this.service.findOne();
     }
 }
