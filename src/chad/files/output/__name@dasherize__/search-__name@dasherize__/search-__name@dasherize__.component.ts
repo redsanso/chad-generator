@@ -9,7 +9,7 @@ import { <%= classify(name) %>ApiService } from '../<%= dasherize(name) %>.servi
     standalone: true,
     imports: [CommonModule],
 	templateUrl: "./search-<%= dasherize(name) %>.component.html",
-	styleUrl: "./search-<%= dasherize(name) %>.component.css",
+	styleUrl: "./search-<%= dasherize(name) %>.component.scss",
 })
 export class Search<%= classify(name) %>Component implements OnInit {
 

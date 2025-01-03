@@ -10,7 +10,7 @@ import { <%= classify(name) %>ApiService } from '../<%= dasherize(name) %>.servi
     standalone: true,
     imports: [CommonModule, RouterModule],
 	templateUrl: "./view-<%= dasherize(name) %>.component.html",
-	styleUrl: "./view-<%= dasherize(name) %>.component.css",
+	styleUrl: "./view-<%= dasherize(name) %>.component.scss",
 })
 export class View<%= classify(name) %>Component implements OnInit {
 
