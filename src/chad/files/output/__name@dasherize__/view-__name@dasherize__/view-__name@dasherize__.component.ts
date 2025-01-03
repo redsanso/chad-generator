@@ -25,6 +25,7 @@ export class View<%= classify(name) %>Component implements OnInit {
     ngOnInit() {
         this.id = this.route.snapshot.params["id"] || "";
 
-        this.data$ = this.service.findOne(this.id);
+        if(this.id) 
+            this.data$ = this.service.findOne(this.id);
     }
 }
