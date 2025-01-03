@@ -19,4 +19,8 @@ export class <%= classify(name)%>ApiService{
         return this.http.get<<%=classify(name)%>[]>(API_URL);
     }
 
+    findOne(id: number):Observable<<%=classify(name) %>>{
+        return this.http.get<<%=classify(name)%>>(`${API_URL}/${id}`);
+    }
+
 }
